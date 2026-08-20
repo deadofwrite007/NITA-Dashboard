@@ -1,0 +1,106 @@
+.container {
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  font-family: var(--font-inter);
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 600;
+  gap: 12px;
+}
+
+.label {
+  color: var(--color-secondary);
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.percent {
+  font-family: var(--font-outfit);
+  font-weight: 700;
+  color: var(--color-primary);
+  width: 32px;
+  text-align: right;
+}
+
+.meterContainer {
+  flex-grow: 1;
+  height: 6px;
+  background-color: #f2f4f7;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.meterBar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease-out;
+}
+
+.riskLevel {
+  width: 48px;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* Colors based on Risk level */
+.highBar { background-color: var(--color-down); }
+.mediumBar { background-color: var(--color-neutral); }
+.lowBar { background-color: var(--color-up); }
+
+.highText { color: var(--color-down); }
+.mediumText { color: var(--color-neutral); }
+.lowText { color: var(--color-up); }
+
+.footer {
+  margin-top: 10px;
+}
+
+.link {
+  font-size: 11px;
+  font-weight: 700;
+  color: #2563eb;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.link:hover {
+  color: #1d4ed8;
+}

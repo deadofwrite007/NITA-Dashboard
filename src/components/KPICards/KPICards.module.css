@@ -1,0 +1,121 @@
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  padding: 16px 30px;
+  background-color: var(--bg-dashboard);
+  font-family: var(--font-inter);
+}
+
+@media (max-width: 1400px) {
+  .kpiGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .kpiGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .kpiGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.iconWrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Specific icon wrapper backgrounds and colors based on screenshot */
+.exportsIcon { background-color: rgba(59, 130, 246, 0.1); color: #2563eb; }
+.importsIcon { background-color: rgba(16, 185, 129, 0.1); color: #10b981; }
+.tradeIcon { background-color: rgba(139, 92, 246, 0.1); color: #8b5cf6; }
+.balanceIcon { background-color: rgba(245, 158, 11, 0.1); color: #f59e0b; }
+.growthExpIcon { background-color: rgba(6, 182, 212, 0.1); color: #06b6d4; }
+.growthImpIcon { background-color: rgba(239, 68, 68, 0.1); color: #ef4444; }
+.gdpIcon { background-color: rgba(59, 130, 246, 0.1); color: #3b82f6; }
+
+.cardTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  line-height: 1.2;
+}
+
+.value {
+  font-family: var(--font-outfit);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.footerRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+
+.trendBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 700;
+}
+
+.trendUp {
+  color: var(--color-up);
+}
+
+.trendDown {
+  color: var(--color-down);
+}
+
+.trendLabel {
+  color: var(--color-tertiary);
+  font-weight: 500;
+}

@@ -1,0 +1,128 @@
+.container {
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  font-family: var(--font-inter);
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.subtitle {
+  font-size: 9px;
+  color: var(--color-tertiary);
+  margin-top: 2px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+.sideLabel {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+}
+
+.leftLabel {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.rightLabel {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.labelCategory {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.labelValue {
+  font-family: var(--font-outfit);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 2px 0;
+}
+
+.labelPercent {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.merchandiseColor { color: var(--color-blue); }
+.servicesColor { color: var(--color-up); }
+
+.donutWrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg); /* Start drawing from top */
+}
+
+.donutSegment {
+  fill: transparent;
+  stroke-width: 16;
+}
+
+.merchandiseSeg {
+  stroke: var(--color-blue);
+}
+
+.servicesSeg {
+  stroke: var(--color-up);
+}
+
+.centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  width: 90px;
+}
+
+.centerTitle {
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--color-tertiary);
+  text-transform: uppercase;
+}
+
+.centerValue {
+  font-family: var(--font-outfit);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: 2px;
+}
